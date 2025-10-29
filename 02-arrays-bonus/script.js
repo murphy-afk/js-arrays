@@ -36,14 +36,8 @@ console.log(teachers);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-let isFabioPresent = "";
-const fabio = teachers.indexOf("Fabio");
-if (fabio !== -1) {
-  isFabioPresent = "Fabio è presente"
-}
-else {
-  isFabioPresent = "Fabio non è presente";
-}
+const fabioIndex = teachers.indexOf("Fabio");
+const isFabioPresent = fabioIndex !== -1;
 console.log(isFabioPresent);
 
 // oppure 
