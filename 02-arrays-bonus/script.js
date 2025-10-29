@@ -50,7 +50,12 @@ console.log(isFabioPresentTwo);
 let teachersString = "";
 
 for (let i = 0; i < teachers.length; i++) {
+  if (i === teachers.length - 1) {
+    teachersString += teachers[i];
+  }
+  else {
   teachersString += `${teachers[i]}, `;
+  }
 }
 console.log(teachersString);
 
@@ -58,4 +63,10 @@ console.log(teachersString);
 
 const teachersStringTwo = teachers.toString();
 console.log(teachersStringTwo);
+
+// oppure 
+
+const teachersStringThree = teachers.join(", ")
+console.log(teachersStringThree);
+
 
