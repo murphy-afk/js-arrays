@@ -11,7 +11,7 @@ const teachers = [
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
 
-const reversedTeachers = teachers.reverse();
+const reversedTeachers = teachers.toReversed();
 console.log(reversedTeachers);
 
 
